@@ -16,6 +16,9 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: false
 #googleAnalytics: TODO
+caches:
+  images:
+    dir: :cacheDir/images
 
 
 # --- security settings ---
