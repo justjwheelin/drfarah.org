@@ -1,0 +1,109 @@
+---
+###############################################################################
+#                                                                             #
+#                            WEBSITE CONFIGURATION                            #
+#                                                                             #
+###############################################################################
+
+
+# --- base website settings ---
+
+title: Farah Aldali
+baseURL: https://drfarah.org/
+theme: toph
+languageCode: en-us
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: false
+#googleAnalytics: TODO
+
+
+# --- security settings ---
+
+security:
+  exec:
+    allow: ['^dart-sass-embedded$', '^git$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']
+
+
+# --- markup settings ---
+
+markup:
+  asciidocExt:
+    preserveTOC: true
+
+
+# --- privacy settings ---
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+  twitter:
+    enableDNT: true
+  vimeo:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
+
+
+# --- navigation menu ---
+
+menu:
+  nav:
+    - identifier: home
+      name: home
+      url: /
+      weight: 10
+  social:
+    - identifier: instagram
+      name: Instagram
+      url: https://www.instagram.com/drfarahaldali
+      weight: 10
+
+
+# --- custom settings ---
+
+params:
+  biography:
+    name: Farah Aldali
+    gender: Female
+    #email: TODO
+    first_online: 2025
+    knows_about: [
+      "Arabic",
+      "dentistry",
+      "Syria"
+    ]
+  colors:
+    primary: "#FFCCCC"
+    secondary: linen
+    accent: darkslateblue
+  description: Homepage of Farah Aldali, a dentist and skincare expert from Syria.
+  fonts:
+    default: Open Sans
+    default_weight: ":wght@500"
+    title: Bungee Shade
+    header: Roboto Slab
+    header_weight: ":wght@500"
+  images:
+    - /img/logo.jpg
+  git_repo: https://github.com/jwwheeler/drfarah.org
+  hire_me: false
+#  social:
+#    github_username: justjwheelin
+#    gitlab_username: jwwheeler
+#    lastfm_username: jflory7
+#    linkedin_url: justinwflory
+#    x_username: jwf_foss
+
+
+# --- internationalization settings ---
+
+defaultContentLang: en
+languages:
+  ar:
+    disabled: true
+    languageDirection: rtl
+    languageName: عربي
+  en:
+    languageName: English
