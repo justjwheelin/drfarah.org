@@ -62,6 +62,14 @@ menu:
       name: Instagram
       url: https://www.instagram.com/drfarahaldali
       weight: 10
+    - identifier: threads
+      name: Threads
+      url: https://www.threads.com/@drfarahaldali
+      weight: 20
+    - identifier: tiktok
+      name: TikTok
+      url: https://www.tiktok.com/@farahaldali20
+      weight: 30
 
 
 # --- custom settings ---
